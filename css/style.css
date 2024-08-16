@@ -1,0 +1,153 @@
+.gradient-text {  /* general style*/
+    background: linear-gradient(to bottom,  #000000e8,#79050d,#2f631f, #000000e8,#79050d,#2f631f, #000000e8,#79050d,#2f631f, #000000e8,#79050d,#2f631f, #000000e8,#79050d,#2f631f, #000000e8,#79050d,#2f631f );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+.nav-item.dropdown:hover > .dropdown-menu {  /* Navbar style*/
+    display: block;
+}
+.nav-link:hover .gradientbold {
+    background: linear-gradient(to right, #343179, #537e6e, #74988a, #822c72, #ac2f7e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+#carouselExampleCaptions {   /* carousel style*/
+margin-top: 65px;
+min-height: calc(100vh - 65px); 
+}
+.carousel-item img {
+  height: calc(100vh - 65px); 
+}
+.carousel-links {
+    font-size: 40px; 
+    right: 0;
+}
+.carousel-links i{
+    color: #45474B;
+}
+.carousel-links a:hover {
+    opacity: 0.5; 
+    transition: opacity 0.3s ease; 
+}
+.picturebg {  /* bacground pictures style*/
+        background-image: url(../images/pg.jpg);
+}
+.picturebg2 {
+    background-image: url(../images/pg2.jpg);
+}
+.picturebg , .picturebg2 {
+    height: 300px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.distination-options { /* distination options  style*/
+    position: relative;
+}
+.otoverlay::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color:rgb(25, 104, 25) ;
+    transition: 1s;
+}
+.otoverlay:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+}
+.otoverlay::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+    background-color:rgb(25, 104, 25) ;
+    transition: 1s;
+}
+.otoverlay:hover::before {
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+}
+.thankoverlay {   /* Thanks for section  style*/
+    position: relative;
+    transition: transform 0.3s ease; 
+}
+.thankoverlay:hover {
+transform: scale(0.9); 
+}
+.thankcardd {
+overflow: hidden; 
+}
+.overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(53, 94, 55, 0.3); 
+transition: opacity 0.3s ease;
+opacity: 0; 
+z-index: 1; 
+}
+.col:hover .overlay {
+opacity: 1; 
+}
+.bg-image1 ,.bg-image2 , .bg-image3  {
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%);
+    z-index: -1;
+} 
+.bg-image1 {
+    background-image: url('../images/thanks1.jpg');
+}
+.bg-image2 {
+    background-image: url('../images/thanks2.jpg');
+}
+.bg-image3 {
+    background-image: url('../images/thanks3.jpg');
+}
+.plunderline {
+    height: 4px;
+    width: 50px;
+    transition: width 0.3s;
+}
+.plcard:hover .plunderline {
+    width: 120px;
+}
+.hoverbut {
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+.hoverbut:hover {
+    background-color: rgba(53, 94, 55) !important;
+    color: white !important;
+}
+.clipbathleft {
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+}
+.clipbathright {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+}
+.colored-shadow {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3), /* Main shadow */
+                0 0 25px rgba(46, 105, 36, 0.5); /* Blurred  shadow */
+}
+.zoom-img {
+    transition: transform 0.5s ease; 
+}
+.plcard:hover .zoom-img {
+    transform: scale(1.04); 
+}
+.card-fixed-height {
+    max-height: 400px; /* Adjust this value as needed */
+}
+.fhover-effect:hover {
+    color: gray !important; /* Changes color from black to gray */
+}
+
