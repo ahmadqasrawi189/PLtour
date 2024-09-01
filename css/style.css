@@ -1,5 +1,5 @@
 .gradient-text {  /* general style*/
-    background: linear-gradient(to bottom,  #000000e8,#79050d,#2f631f, #000000e8,#79050d,#2f631f, #000000e8,#79050d,#2f631f, #000000e8,#79050d,#2f631f, #000000e8,#79050d,#2f631f, #000000e8,#79050d,#2f631f );
+    background: linear-gradient(to bottom ,  #000000e8,#79050d,#2f631f, #000000e8,#79050d,#2f631f, #000000e8,#79050d,#2f631f, #000000e8,#79050d,#2f631f, #000000e8,#79050d,#2f631f, #000000e8,#79050d,#2f631f );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -12,7 +12,7 @@
     -webkit-text-fill-color: transparent;
     font-weight: bold;
 }
-#carouselExampleCaptions {   /* carousel style*/
+#carouselExampleCaptions {   
 margin-top: 65px;
 min-height: calc(100vh - 65px); 
 }
@@ -41,18 +41,30 @@ min-height: calc(100vh - 65px);
     background-size: cover;
     background-attachment: fixed;
 }
+.copyButton {
+    visibility: hidden !important;
+    border-radius: 0 10px 10px 10px !important;
+  }
+  #buthov:hover span:first-child {
+    visibility: visible !important;
+  }
+  #buthov:active span:last-child {
+    visibility: visible !important;
+  }
 .distination-options { /* distination options  style*/
     position: relative;
 }
-.otoverlay::after {
+.otoverlay::after ,.otoverlay::before {
     position: absolute;
     content: "";
     width: 0;
     height: 0;
-    top: 0;
-    left: 0;
     background-color:rgb(25, 104, 25) ;
     transition: 1s;
+}
+.otoverlay::after {
+    top: 0;
+    left: 0;
 }
 .otoverlay:hover::after {
     width: 100%;
@@ -60,14 +72,8 @@ min-height: calc(100vh - 65px);
     opacity: 0.3;
 }
 .otoverlay::before {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
     bottom: 0;
     right: 0;
-    background-color:rgb(25, 104, 25) ;
-    transition: 1s;
 }
 .otoverlay:hover::before {
     width: 100%;
@@ -75,7 +81,6 @@ min-height: calc(100vh - 65px);
     opacity: 0.3;
 }
 .thankoverlay {   /* Thanks for section  style*/
-    position: relative;
     transition: transform 0.3s ease; 
 }
 .thankoverlay:hover {
@@ -85,18 +90,12 @@ transform: scale(0.9);
 overflow: hidden; 
 }
 .overlay {
-position: absolute;
-top: 0;
 left: 0;
-width: 100%;
-height: 100%;
 background: rgba(53, 94, 55, 0.3); 
-transition: opacity 0.3s ease;
-opacity: 0; 
-z-index: 1; 
+transition: opacity 0.3s ease; 
 }
 .col:hover .overlay {
-opacity: 1; 
+opacity: 1 !important; 
 }
 .bg-image1 ,.bg-image2 , .bg-image3  {
     background-size: cover;
@@ -133,6 +132,11 @@ opacity: 1;
 }
 .clipbathright {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+}
+@media (max-width: 767.98px) {
+    .clipbathright ,.clipbathleft {
+        clip-path: none;
+    }
 }
 .colored-shadow {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3), /* Main shadow */

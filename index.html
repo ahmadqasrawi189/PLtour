@@ -10,21 +10,17 @@
 <body>
   <nav class="navbar navbar-expand-lg  bg-body-tertiary  fixed-top text-success bg-light  bg-opacity-75 ">
     <div class="container-fluid">
-      <img src="images/logo.png" alt="logo" height="50" width="50" class="rounded-circle" style = "margin-right: 35px;" >
+      <img src="images/logo.png" alt="logo" height="50" width="50" class="rounded-circle me-md-5 me-sm-0"  >
       <a class="navbar-brand p-2 border-end border-1 border-secondary border-opacity-50 gradient-text fw-bold " href="#">Palestine</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarScroll">
-        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll " style="--bs-scroll-height: 100px;">
-          <li class="nav-item ">
-            <a class="nav-link text-success" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link text-success " href="#">Link</a>
-          </li>
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll " style="--bs-scroll-height: 500px;">
+          <li class="nav-item "><a class="nav-link text-success" aria-current="page" href="#">Home</a></li>
+          <li class="nav-item "> <a class="nav-link text-success " href="#">Link</a></li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-success" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style = "border:1px solid ;border-radius:5px"> <span class="gradientbold">T</span>rips</a>
+            <a class="nav-link dropdown-toggle text-success border border-1 rounded-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" > <span class="gradientbold">T</span>rips</a>
             <ul class="dropdown-menu bg-light  bg-opacity-50 ">
               <li><a class="dropdown-item text-success" href="#">West Bank</a></li>
               <li><a class="dropdown-item text-success" href="#">Gaza</a></li>
@@ -103,7 +99,7 @@
         <div class="carousel-caption bg-success bg-opacity-75 rounded-2  d-md-block">
           <h3 class="text-uppercase">Jerusalem</h3>
           <p>It is considered holy to the three major Abrahamic religions-Islam, Christianity, and Judaism.</p>
-          <button class="btn btn-success" type="submit">Visit Us</button>
+          <button class="btn btn-dark" type="submit">Visit Us</button>
         </div>
       </div>
       <div class="carousel-item">
@@ -111,7 +107,7 @@
         <div class="carousel-caption bg-success bg-opacity-75 rounded-2  d-md-block">
           <h3 class="text-uppercase">Jaffa</h3>
           <p> Excavations at Jaffa indicate that the city was settled as early as the Early Bronze Age.</p>
-          <button class="btn btn-success" type="submit">Visit Us</button>
+          <button class="btn btn-dark" type="submit">Visit Us</button>
         </div>
       </div>
       <div class="carousel-item">
@@ -119,7 +115,7 @@
         <div class="carousel-caption bg-success bg-opacity-75 rounded-2 d-md-block">
           <h3 class="text-uppercase">Haifa</h3>
           <p>The citys most iconic sites are the immaculately landscaped terraces of the Bahá'í Gardens .</p>
-          <button class="btn btn-success" type="submit">Visit Us</button>
+          <button class="btn btn-dark" type="submit">Visit Us</button>
         </div>
       </div>
       <div class="carousel-item">
@@ -127,7 +123,7 @@
         <div class="carousel-caption bg-success bg-opacity-75 rounded-2 d-md-block">
           <h3 class="text-uppercase">Acre</h3>
           <p>Acre known locally as Akko, is a city in the coastal plain region of the Northern District of Palestine.</p>
-          <button class="btn btn-success" type="submit">Visit Us</button>
+          <button class="btn btn-dark" type="submit">Visit Us</button>
         </div>
       </div>
     </div><!-- carousel items  -->
@@ -138,16 +134,16 @@
     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
     </button>
-  </div>    
+  </div>    <!-- Carousel section -->
   <blockquote class="blockquote bg-success p-4 bg-opacity-50 rounded-bottom">
     <h5 class="gradient-text d-inline-block fw-bold">WELCOME</h5>
     <p class="text-light fs-6 ">Welcome to Palestine, where history, culture,  Discover the heart of the Holy Land and breathtaking landscapes converge. Discover the heart of the Holy Land, where every corner tells a story and every journey is unforgettable.</p>
     <button class="btn text-success bg-light" type="button" >Learn more</button>
-  </blockquote> 
+  </blockquote> <!-- Welcome section -->
   <hr>
   <div class="popular-destination  "> <!-- Popular destination in Palestine -->
     <div class="section-title text-bg-success p-4 fs-4 rounded-3">
-      <p class="text-center">Popular destinations in Palestine</p>
+      <h2 class="text-center">Popular destinations in Palestine</h2>
     </div> 
     <div class="accordion " id="accordionExample">
       <div class="accordion-item ">
@@ -192,12 +188,15 @@
   <hr>
   <div class="translation">
     <div class="section-title text-bg-success p-1 fs-4 rounded-3">
-      <p class="text-center">Translate From Arabic To English</p>
+      <h2 class="text-center">Translate From Arabic To English</h2>
     </div> 
     <div class="trans-items bg-success p-4 bg-opacity-50">
       <h5 class="text-light">Write and Translate <span class="text-success">Press Here</span></h5>
       <!-- Button trigger modal -->
-      <button type="button" class="btn text-success bg-light mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal" >Copy</button>
+      <button type="button" class="btn text-success bg-light mb-3 position-relative" id="buthov" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-placement="right" title="Copied">Copy
+        <span class="position-absolute top-100 start-100 badge   bg-secondary copyButton text-wrap z-3 p-1">Copy to clipboard</span>
+        <span class="position-absolute top-100 start-100  badge  bg-secondary copyButton text-wrap z-3">Copied successfully</span>
+      </button>
       <!-- Modal -->
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -223,12 +222,15 @@
   </div>
   <div class="translation">
     <div class="section-title text-bg-success p-1 fs-4 rounded-3">
-      <p class="text-center">Translate From Arabic To German</p>
+      <h2 class="text-center">Translate From Arabic To German</h2>
     </div> 
     <div class="trans-items bg-success p-4 bg-opacity-50">
       <h5 class="text-light">Write and Translate <span class="text-success">Press Here</span></h5>
       <!-- Button trigger modal -->
-      <button type="button" class="btn text-success bg-light mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal" >Copy</button>
+      <button type="button" class="btn text-success bg-light mb-3 position-relative" id="buthov" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-placement="right" title="Copied">Copy
+        <span class="position-absolute top-100 start-100 badge   bg-secondary copyButton text-wrap z-3 p-1">Copy to clipboard</span>
+        <span class="position-absolute top-100 start-100  badge  bg-secondary copyButton text-wrap z-3">Copied successfully</span>
+      </button>
       <!-- Modal -->
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -254,11 +256,11 @@
   <div class="picturebg"></div>
   <div class="distination-options">
     <div class="section-title text-bg-success p-2 fs-4 mb-4 rounded-3 bg-opacity-25">
-      <h2 class="text-center  text-uppercase gradient-text ">Popular destinations in Palestine </h2>
+      <h2 class="text-center  text-uppercase gradient-text  ">Popular destinations in Palestine </h2>
     </div> 
     <div class="container">
       <!-- First Row with 3 Cards -->
-      <div class="row row-cols-1 row-cols-md-3 g-5 mb-4">
+      <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 g-5 mb-4">
         <div class="col  bg-body-tertiary rounded ">
           <div class="card h-100 otoverlay ">
             <img src="images/PDchurchofnat.jpg" class="card-img-top shadow ps-3 pe-3  bg-body-tertiary rounded" alt="..." height="350px">
@@ -297,7 +299,7 @@
         </div>  
       </div>  
       <!-- Second Row with 3 Cards -->
-      <div class="row row-cols-1 row-cols-md-3 g-5 mb-4">
+      <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 g-5 mb-4">
         <div class="col  bg-body-tertiary rounded ">
           <div class="card h-100 otoverlay">
             <img src="images/PDibra.jpg" class="card-img-top shadow ps-3 pe-3  bg-body-tertiary rounded" alt="..." height="350px">
@@ -336,9 +338,9 @@
         </div>  
       </div>
       <!-- Third Row with 2 Centered Cards -->
-      <div class=" row g-4 justify-content-center">
+      <div class=" row g-4 justify-content-center row-cols-1 row-cols-sm-1 row-cols-md-3">
         <div class="col-md-4 ">
-          <div class="card h-100 otoverlay ">
+          <div class="card  h-100 otoverlay ">
             <img src="images/PDzedekiah.jpg" class="card-img-top shadow ps-3 pe-3  bg-body-tertiary rounded" alt="..." height="350px">
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-center">
@@ -350,7 +352,7 @@
           </div>
         </div> 
         <div class="col-md-4 me-md-3">
-          <div class="card h-100 otoverlay ">
+          <div class="card  h-100 otoverlay ">
             <img src="images/PDseb.jpg" class="card-img-top shadow ps-3 pe-3  bg-body-tertiary rounded" alt="..." height="350px">
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-center">
@@ -368,15 +370,15 @@
   <hr>
   <div class="thanksfor">
     <div class="section-title text-bg-success p-2 fs-4 mb-4 rounded-3 bg-opacity-25">
-      <h2 class="text-center  text-uppercase gradient-text ">Thanks For </h2>
+      <h2 class="text-center  text-uppercase gradient-text fw-bold ">Thanks For </h2>
     </div> 
     <div class="container px-5">
-      <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 g-4">
         <div class="col thankoverlay">
           <div class="thankcardd position-relative text-white p-4 rounded ">
             <!-- Background div -->
             <div class="bg-image1 position-absolute top-0 start-0 w-100 h-100"></div>
-            <div class="overlay"></div>
+            <div class="overlay position-absolute top-0 w-100 h-100 opacity-0"></div>
             <h5>All thanks and appreciation</h5>
             <span class="datetha mb-5 "><small class="text-body-white"><i class="fa-regular fa-clock"> August 12, 2024</i></small></span>
             <!-- Positioning cardend to the bottom-left -->
@@ -393,7 +395,7 @@
           <div class="thankcardd position-relative text-white p-4 rounded ">
             <!-- Background div -->
             <div class="bg-image2 position-absolute top-0 start-0 w-100 h-100 "></div>
-            <div class="overlay"></div>
+            <div class="overlay position-absolute top-0 w-100 h-100 opacity-0"></div>
             <h5>All thanks and appreciation</h5>
             <span class="datetha mb-5 "><small class="text-body-white"><i class="fa-regular fa-clock"> August 12, 2024</i></small></span>
             <!-- Positioning cardend to the bottom-left -->
@@ -410,7 +412,7 @@
           <div class="thankcardd position-relative text-white p-4 rounded ">
             <!-- Background div -->
             <div class="bg-image3 position-absolute top-0 start-0 w-100 h-100"></div>
-            <div class="overlay"></div>
+            <div class="overlay position-absolute top-0 w-100 h-100 opacity-0"></div>
             <h5>All thanks and appreciation</h5>
             <span class="datetha mb-5 "><small class="text-body-white"><i class="fa-regular fa-clock"> August 12, 2024</i></small></span>
             <!-- Positioning cardend to the bottom-left -->
@@ -428,41 +430,42 @@
   </div>
   <hr>
   <div class="palnews">
-    <div class="section-title text-bg-success p-1 fs-4 mb-4"> <!-- I need to change the colors -->
-      <p class="text-center text-uppercase">Palestine news </p>
-    </div> 
-    <div class="container px-5 mt-5">
-      <div class="plcard card mb-3 colored-shadow  position-relative overflow-hidden card-fixed-height " >
-        <div class="row g-0 ">
-          <div class="col-md-8">
-            <div class="card-body p-5">
-              <h5 class="card-title text-success">Opening Ibrahimi mosque after renovation </h5>
-              <span><small><i class="fa-solid fa-calendar-days"></i> Mon, May 25th 2023</small></span>
-              <span class="plunderline bg-success d-block rounded-1 "></span>
-              <p class="card-text mt-3 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet ea ipsum quasi ad quis, dicta illum obcaecati beatae enim, amet voluptatum harum deserunt, velit expedita optio dolor ipsa at hic! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet ea ipsum quasi ad quis, dicta illum obcaecati beatae enim, amet voluptatum harum deserunt, velit expedita optio dolor ipsa at hic! </p>
-              <button type="button" class="btn btn-secondary mt-5 p-1 px-2 text-black"><i class="fa-solid fa-microphone"></i> Podcast</button>
-              <button type="button" class="btn btn-secondary mt-5 p-1 px-2 text-black"><i class="fa-solid fa-clock"></i> 55 mins</button>
-              <button type="button" class="btn btn-secondary mt-5 p-1 px-2 text-dark hoverbut"><i class="fa-solid fa-play"></i> Play Episode</button>
-            </div>
-          </div>
-          <div class="col-md-4   ">
+    <div class="section-title p-1  "> 
+      <h2 class="text-center text-uppercase gradient-text fw-bold">Palestine news </h2>
+    </div>  
+    <div class="container px-md-5 px-sm-1 ">
+      <div class="plcard card mb-3 colored-shadow overflow-hidden card-fixed-height  " >
+        <div class="row  ">
+          <div class="col-md-4 col-sm-12 order-md-2">
             <img src="images/PDibra.jpg" class="img-fluid rounded-start h-100  clipbathright zoom-img " alt="...">
           </div>
+          <div class="col-md-8 col-sm-12 order-md-1">
+            <div class="card-body p-md-5 p-sm-2">
+              <h5 class="card-title text-success">Ibrahimi Mosque Renovation </h5>
+              <span><small><i class="fa-solid fa-calendar-days"></i> Mon, May 25th 2023</small></span>
+              <span class="plunderline bg-success d-block rounded-1 "></span>
+              <p class="card-text mt-3 " style="text-align: justify;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet ea ipsum quasi ad quis, dicta illum obcaecati beatae enim, amet voluptatum harum deserunt, velit expedita optio dolor ipsa at hic! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet ea ipsum quasi ad quis, dicta illum obcaecati beatae enim, amet voluptatum harum deserunt, velit expedita optio dolor ipsa at hic! </p>
+              <button type="button" class="btn btn-secondary mt-5 p-1 px-2 text-black"><i class="fa-solid fa-microphone"></i> Podcast</button>
+              <button type="button" class="btn btn-secondary mt-5 p-1 px-2 text-black"><i class="fa-solid fa-clock"></i> 55 mins</button>
+              <button type="button" class="btn btn-secondary mt-5 p-1 px-2 text-dark hoverbut"><i class="fa-solid fa-play"></i> Play Episode</button>
+              </div>
+          </div>
+        
         </div>
       </div>
     </div>
-    <div class="container px-5 mt-5">
-      <div class="plcard card mb-3 colored-shadow position-relative overflow-hidden card-fixed-height" >
-        <div class="row g-0 ">
-          <div class="col-md-4  ">
-            <img src="images/PDkhan.jpg" class="img-fluid rounded-start h-100  clipbathleft zoom-img" alt="...">
+    <div class="container px-md-5 px-sm-1 mt-5">
+      <div class="plcard card mb-3 colored-shadow  overflow-hidden card-fixed-height" >
+        <div class="row ">
+          <div class="col-md-4 col-sm-12">
+            <img src="images/Car.Haifa.jpg" class="img-fluid rounded-start h-100  clipbathleft zoom-img" alt="...">
           </div>
           <div class="col-md-8">
-            <div class="card-body p-5">
-              <h5 class="card-title text-success">Opening Ibrahimi mosque after renovation </h5>
+            <div class="card-body p-md-5 p-sm-2">
+              <h5 class="card-title text-success">Bahaa Garden Renovation </h5>
               <span><small><i class="fa-solid fa-calendar-days"></i> Mon, May 25th 2023</small></span>
               <span class="plunderline bg-success d-block rounded-1"></span>
-              <p class="card-text mt-3 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet ea ipsum quasi ad quis, dicta illum obcaecati beatae enim, amet voluptatum harum deserunt, velit expedita optio dolor ipsa at hic! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet ea ipsum quasi ad quis, dicta illum obcaecati beatae enim, amet voluptatum harum deserunt, velit expedita optio dolor ipsa at hic! </p>
+              <p class="card-text mt-3 " style="text-align: justify;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet ea ipsum quasi ad quis, dicta illum obcaecati beatae enim, amet voluptatum harum deserunt, velit expedita optio dolor ipsa at hic! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet ea ipsum quasi ad quis, dicta illum obcaecati beatae enim, amet voluptatum harum deserunt, velit expedita optio dolor ipsa at hic! </p>
               <button type="button" class="btn btn-secondary mt-5 p-1 px-2 text-black"><i class="fa-solid fa-microphone"></i> Podcast</button>
               <button type="button" class="btn btn-secondary mt-5 p-1 px-2 text-black"><i class="fa-solid fa-clock"></i> 55 mins</button>
               <button type="button" class="btn btn-secondary mt-5 p-1 px-2 text-dark hoverbut"><i class="fa-solid fa-play"></i> Play Episode</button>
@@ -471,38 +474,39 @@
         </div>
       </div>
     </div>
-    <div class="container px-5 mt-5">
-      <div class="plcard card mb-3 colored-shadow position-relative overflow-hidden card-fixed-height " >
-        <div class="row g-0 ">
-          <div class="col-md-8">
-            <div class="card-body p-5">
-              <h5 class="card-title text-success">Opening Ibrahimi mosque after renovation </h5>
-              <span><small><i class="fa-solid fa-calendar-days"></i> Mon, May 25th 2023</small></span>
-              <span class="plunderline bg-success d-block rounded-1"></span>
-              <p class="card-text mt-3 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet ea ipsum quasi ad quis, dicta illum obcaecati beatae enim, amet voluptatum harum deserunt, velit expedita optio dolor ipsa at hic! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet ea ipsum quasi ad quis, dicta illum obcaecati beatae enim, amet voluptatum harum deserunt, velit expedita optio dolor ipsa at hic! </p>
-              <button type="button" class="btn btn-secondary mt-5 p-1 px-2 text-black"><i class="fa-solid fa-microphone"></i> Podcast</button>
-              <button type="button" class="btn btn-secondary mt-5 p-1 px-2 text-black"><i class="fa-solid fa-clock"></i> 55 mins</button>
-              <button type="button" class="btn btn-secondary mt-5 p-1 px-2 text-dark hoverbut"><i class="fa-solid fa-play"></i> Play Episode</button>
-            </div>
-          </div>
-          <div class="col-md-4   ">
+    <div class="container px-md-5 px-sm-1 mt-5">
+      <div class="plcard card mb-3 colored-shadow  overflow-hidden card-fixed-height " >
+        <div class="row ">
+          <div class="col-md-4 col-sm-12 order-md-2  ">
             <img src="images/PDseb.jpg" class="img-fluid rounded-start h-100  clipbathright zoom-img " alt="...">
           </div>
+          <div class="col-md-8 col-sm-12 order-md-1">
+            <div class="card-body p-md-5 p-sm-2">
+              <h5 class="card-title text-success ">Sebastia Renovation </h5>
+              <span><small><i class="fa-solid fa-calendar-days"></i> Mon, May 25th 2023</small></span>
+              <span class="plunderline bg-success d-block rounded-1"></span>
+              <p class="card-text mt-3 " style="text-align: justify;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet ea ipsum quasi ad quis, dicta illum obcaecati beatae enim, amet voluptatum harum deserunt, velit expedita optio dolor ipsa at hic! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet ea ipsum quasi ad quis, dicta illum obcaecati beatae enim, amet voluptatum harum deserunt, velit expedita optio dolor ipsa at hic! </p>
+              <button type="button" class="btn btn-secondary mt-5 p-1 px-2 text-black"><i class="fa-solid fa-microphone"></i> Podcast</button>
+              <button type="button" class="btn btn-secondary mt-5 p-1 px-2 text-black"><i class="fa-solid fa-clock"></i> 55 mins</button>
+              <button type="button" class="btn btn-secondary mt-5 p-1 px-2 text-dark hoverbut"><i class="fa-solid fa-play"></i> Play Episode</button>
+            </div>
+          </div>
+          
         </div>
       </div>
     </div>
-    <div class="container px-5 mt-5">
-      <div class="plcard card mb-3 colored-shadow position-relative overflow-hidden card-fixed-height" >
-        <div class="row g-0 ">
-          <div class="col-md-4  ">
-            <img src="images/PDchur2.jpg" class="img-fluid rounded-start h-100  clipbathleft zoom-img" alt="...">
+    <div class="container px-md-5 px-sm-1 mt-5">
+      <div class="plcard card mb-3 colored-shadow  overflow-hidden card-fixed-height" >
+        <div class="row ">
+          <div class="col-md-4 col-sm-12  ">
+            <img src="images/PDdeser.jpg" class="img-fluid rounded-start h-100  clipbathleft zoom-img" alt="...">
           </div>
-          <div class="col-md-8">
-            <div class="card-body p-5">
-              <h5 class="card-title text-success">Opening Ibrahimi mosque after renovation </h5>
+          <div class="col-md-8 ">
+            <div class="card-body p-md-5 p-sm-2">
+              <h5 class="card-title text-success">Magical Vally renovation </h5>
               <span><small><i class="fa-solid fa-calendar-days"></i> Mon, May 25th 2023</small></span>
               <span class="plunderline bg-success d-block rounded-1"></span>
-              <p class="card-text mt-3 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet ea ipsum quasi ad quis, dicta illum obcaecati beatae enim, amet voluptatum harum deserunt, velit expedita optio dolor ipsa at hic! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet ea ipsum quasi ad quis, dicta illum obcaecati beatae enim, amet voluptatum harum deserunt, velit expedita optio dolor ipsa at hic! </p>
+              <p class="card-text mt-3 " style="text-align: justify;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet ea ipsum quasi ad quis, dicta illum obcaecati beatae enim, amet voluptatum harum deserunt, velit expedita optio dolor ipsa at hic! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet ea ipsum quasi ad quis, dicta illum obcaecati beatae enim, amet voluptatum harum deserunt, velit expedita optio dolor ipsa at hic! </p>
               <button type="button" class="btn btn-secondary mt-5 p-1 px-2 text-black"><i class="fa-solid fa-microphone"></i> Podcast</button>
               <button type="button" class="btn btn-secondary mt-5 p-1 px-2 text-black"><i class="fa-solid fa-clock"></i> 55 mins</button>
               <button type="button" class="btn btn-secondary mt-5 p-1 px-2 text-dark hoverbut"><i class="fa-solid fa-play"></i> Play Episode</button>
@@ -561,39 +565,43 @@
   </div>
   <div class="container-fluid text-center bg-success  p-3 pb-5">
     <div class="row text-white ">
-      <div class="col border-top border-bottom py-2 mx-2">
-        <img src="images/logo.png" alt="logo" height="50" width="50" class="rounded-circle colored-shadow"  >
-        <span>  Good company</span>
+      <div class="f1 col-sm-12 col-md-4">
+        <div class=" border-top border-bottom py-2 mx-2 ">
+          <img src="images/logo.png" alt="logo" height="50" width="50" class="rounded-circle colored-shadow"  >
+          <span>  Good company</span>
+        </div>
+        <div class="text-white mt-2">
+          <p>Tel : 48797462249</p>
+          <p>Fax : 48797462249</p>
+          <p>Address : POLAND</p>
+        </div>
       </div>
-      <div class="col border-top border-bottom py-2 mx-2">
-        <img src="images/logo.png" alt="logo" height="50" width="50" class="rounded-circle colored-shadow"  >
-        <span>  important links</span>
+      <div class="f2 col-sm-12 col-md-4">
+        <div class=" border-top border-bottom py-2 mx-2 ">
+          <img src="images/logo.png" alt="logo" height="50" width="50" class="rounded-circle colored-shadow"  >
+          <span>  important links</span>
+        </div>
+        <div class="mt-2">
+          <p><a href="#" class="text-decoration-none text-black fhover-effect">Visit Us</a></p>
+          <p></p><a href="#" class="text-decoration-none text-black fhover-effect">Take alook</a></p>
+          <p></p><a href="#" class="text-decoration-none text-black fhover-effect">Your health is more important</a></p>
+        </div>
       </div>
-      <div class="col border-top border-bottom py-2 mx-2">
-        <img src="images/logo.png" alt="logo" height="50" width="50" class="rounded-circle colored-shadow"  >
-        <span>  Vision</span>
+      <div class="f3 col-sm-12 col-md-4">
+        <div class=" border-top border-bottom py-2 mx-2 ">
+          <img src="images/logo.png" alt="logo" height="50" width="50" class="rounded-circle colored-shadow"  >
+          <span>  Vision</span>
+        </div>
+        <div class=" text-white mt-2" >
+          <p>Services for all</p>
+          <p>Provide best services</p>
+          <p>You will be better than before</p>
+        </div>
       </div>
     </div>
-    <div class="row border-bottom py-2">
-      <div class="col text-white">
-        <p>Tel : 48797462249</p>
-        <p>Fax : 48797462249</p>
-        <p>Address : POLAND</p>
-      </div>
+    <div class="row border-top border-bottom py-3">
       <div class="col">
-        <p><a href="#" class="text-decoration-none text-black fhover-effect">Visit Us</a></p>
-        <p></p><a href="#" class="text-decoration-none text-black fhover-effect">Take alook</a></p>
-        <p></p><a href="#" class="text-decoration-none text-black fhover-effect">Your health is more important</a></p>
-      </div>
-      <div class="col text-white " >
-        <p>Services for all</p>
-        <p>Provide best services</p>
-        <p>You will be better than before</p>
-      </div>
-    </div>
-    <div class="row border-bottom py-2">
-      <div class="col">
-      <h4 class="text-uppercase">Copyright &copy;2020 AhmedAlqassrawi Good Company . All Rights  </h4>
+      <h4 class="text-uppercase gradient-text">Copyright &copy;2020 AhmedAlqassrawi Good Company . All Rights  </h4>
       </div>
     </div>
   </div>
