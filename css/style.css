@@ -20,11 +20,11 @@ min-height: calc(100vh - 65px);
   height: calc(100vh - 65px); 
 }
 .carousel-links {
-    font-size: 40px; 
+    font-size: 50px; 
     right: 0;
 }
 .carousel-links i{
-    color: #45474B;
+    color: #0e0e0e;
 }
 .carousel-links a:hover {
     opacity: 0.5; 
@@ -44,13 +44,13 @@ min-height: calc(100vh - 65px);
 .copyButton {
     visibility: hidden !important;
     border-radius: 0 10px 10px 10px !important;
-  }
+}
   #buthov:hover span:first-child {
     visibility: visible !important;
-  }
+}
   #buthov:active span:last-child {
     visibility: visible !important;
-  }
+}
 .distination-options { /* distination options  style*/
     position: relative;
 }
@@ -86,9 +86,6 @@ min-height: calc(100vh - 65px);
 .thankoverlay:hover {
 transform: scale(0.9); 
 }
-.thankcardd {
-overflow: hidden; 
-}
 .overlay {
 left: 0;
 background: rgba(53, 94, 55, 0.3); 
@@ -119,13 +116,6 @@ opacity: 1 !important;
 }
 .plcard:hover .plunderline {
     width: 120px;
-}
-.hoverbut {
-    transition: background-color 0.3s ease; /* Smooth transition */
-}
-.hoverbut:hover {
-    background-color: rgba(53, 94, 55) !important;
-    color: white !important;
 }
 .clipbathleft {
     clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
