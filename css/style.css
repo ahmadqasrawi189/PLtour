@@ -1,5 +1,5 @@
 .gradient-text {  /* general style*/
-    background: linear-gradient(to bottom ,  #000000e8,#79050d,#2f631f, #000000e8,#79050d,#2f631f, #000000e8,#79050d,#2f631f, #000000e8,#79050d,#2f631f, #000000e8,#79050d,#2f631f, #000000e8,#79050d,#2f631f );
+    background: linear-gradient(to right ,  #000000e8,#79050d, white,#2f631f, #000000e8,#79050d,#2f631f, white, #000000e8,#79050d,#2f631f, #000000e8,white,#79050d,#2f631f, #000000e8,#79050d,#2f631f, #000000e8,#79050d,  #000000e8,#79050d,#2f631f, white, #000000e8,#79050d,#2f631f, #000000e8,white,#79050d,#2f631f, #000000e8,#79050d,#2f631f, #000000e8,#79050d,#2f631f );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -24,7 +24,7 @@ min-height: calc(100vh - 65px);
     right: 0;
 }
 .carousel-links i{
-    color: #0e0e0e;
+    color: #f30707;
 }
 .carousel-links a:hover {
     opacity: 0.5; 
@@ -59,7 +59,7 @@ min-height: calc(100vh - 65px);
     content: "";
     width: 0;
     height: 0;
-    background-color:rgb(25, 104, 25) ;
+    background-color:rgb(29, 32, 29) ;
     transition: 1s;
 }
 .otoverlay::after {
@@ -88,7 +88,7 @@ transform: scale(0.9);
 }
 .overlay {
 left: 0;
-background: rgba(53, 94, 55, 0.3); 
+background: rgba(125, 133, 192, 0.3); 
 transition: opacity 0.3s ease; 
 }
 .col:hover .overlay {
@@ -130,7 +130,7 @@ opacity: 1 !important;
 }
 .colored-shadow {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3), /* Main shadow */
-                0 0 25px rgba(46, 105, 36, 0.5); /* Blurred  shadow */
+                0 0 25px rgba(43, 36, 105, 0.5); /* Blurred  shadow */
 }
 .zoom-img {
     transition: transform 0.5s ease; 
